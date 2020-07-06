@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+   android:layout_height="match_parent"
+    android:background="@drawable/linear_background"
+    tools:context=".activity.CompraCoinActivity">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/linear_background">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/name"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+        <!--  app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />-->
+        <TextView
+            android:id="@+id/txtNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:drawableLeft="@drawable/money2"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+        <!--   app:layout_constraintBottom_toBottomOf="@+id/textView3"
+          app:layout_constraintStart_toEndOf="@+id/textView3"
+          app:layout_constraintTop_toTopOf="@+id/textView3" />-->
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linear_background">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:textStyle="italic"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/valorMoeda"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/txtValor"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/money"
+            android:text="TextView"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+        <!--  app:layout_constraintBottom_toBottomOf="@+id/textView2"
+          app:layout_constraintStart_toEndOf="@+id/textView2"
+          app:layout_constraintTop_toTopOf="@+id/textView2" />-->
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linear_background">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:textStyle="italic"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/qtd"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/edtQdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:inputType="numberDecimal"
+            android:textColor="#ffffff" />
+        <!--   app:layout_constraintBottom_toBottomOf="@+id/textView4"
+           app:layout_constraintStart_toEndOf="@+id/textView4"
+           app:layout_constraintTop_toTopOf="@+id/textView4" />-->
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linear_background">
+
+        <TextView
+            android:id="@+id/textView"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/data"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <EditText
+            android:id="@+id/edtData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:inputType="date"
+            android:textColor="#ffffff" />
+        <!--  app:layout_constraintBottom_toBottomOf="@+id/textView"
+          app:layout_constraintStart_toEndOf="@+id/textView"
+          app:layout_constraintTop_toTopOf="@+id/textView" />-->
+
+    </TableRow>
+
+    <TableRow
+        android:background="@drawable/linear_background">
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/mDefaultButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:text="@string/buy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </TableRow>
+
+
+</TableLayout>

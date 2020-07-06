@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TrabalhoAS</string>
+    <string name="valor">Value:</string>
+    <string name="name">Name:</string>
+    <string name="qtd">Amount:</string>
+    <string name="dataCompra">Purchase date:</string>
+    <string name="variacao">Variation:</string>
+    <string name="lucro">Profit:</string>
+    <string name="remove">Remove</string>
+    <string name="valorMoeda">Currency value:</string>
+    <string name="data">Date:</string>
+    <string name="buy">Buy</string>
+    <string name="addMoeda">Add Currency</string>
+    <string name="listMoeda">"List of currencies "</string>
+    <string name="escolha">Choose a currency</string>
+</resources>
